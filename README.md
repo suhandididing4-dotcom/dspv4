@@ -1,7 +1,20 @@
-# DSP Mixer Android v4
+# EquaTube DSP
 
-Project DSP Mixer Android yang disiapkan agar pemilik HP saja dapat menghasilkan APK melalui GitHub Actions, tanpa Android Studio/PC.
+Ready-to-upload Android project for GitHub Actions.
 
-Fitur v3 yang dibawa: 16 channel, EQ, compressor, routing bus, spectrum, reverb/delay, limiter, crossover, scene/preset, dan USB-audio hooks.
+## Build
+1. Upload the contents of this ZIP to a GitHub repository.
+2. Open **Actions**.
+3. Select **Build EquaTube DSP APK**.
+4. Press **Run workflow**.
+5. Download artifact **EquaTubeDSP-debug** after a successful build.
 
-**Build paling mudah:** ikuti `BUILD_ON_PHONE.md`.
+## Included
+- 10-band EQ: 60 Hz to 16 kHz
+- Flat / Rock / Vocal / Bass presets
+- Real-time Android AudioEffect Equalizer
+- Built-in test tone
+- Java + AndroidX
+- JDK 17 + Gradle 8.9 through GitHub Actions
+
+This version is a stable DSP test base. It does not claim to process audio from every other Android app. A music/file player can be added in the next version and routed through the DSP.
